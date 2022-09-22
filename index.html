@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body class="grid-container">
+    <header class="navbar">
+        <div class="header-container">
+            <h1>Cocina Paraíso</h1>
+            <h2>Edgar Sanchez Flores 4A</h2>
+        </div>
+    </header>
+    <div class="cards">
+        <div class="container-cards">
+            <div class="card">
+                <h3 class="titulo">Tacos</h3>
+                <img class="imagen" src="https://imgs.search.brave.com/6Wsh08N0VHU88zcs-B68MkK_iDrgZ0NdjlkOtiRAUGQ/rs:fit:746:225:1/g:ce/aHR0cHM6Ly90c2U0/Lm1tLmJpbmcubmV0/L3RoP2lkPU9JUC55/bzZCaWlLV3VnVmRB/VEVVNExiMnV3SGFF/dCZwaWQ9QXBp" alt="">
+                <p class="descripcion">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vero voluptatem culpa.</p>
+                <p class="precio">$40</p>
+            </div>
+            <div class="card">
+                <h3 class="titulo">hamburguesas</h3>
+                <img class="imagen" src="https://cdn7.kiwilimon.com/brightcove/9086/9086.jpg" alt="">
+                <p class="descripcion">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vero voluptatem culpa.</p>
+                <p class="precio">$75</p>
+            </div>
+            <div class="card">
+                <h3 class="titulo">Hot Dog</h3>
+                <img class="imagen" src="https://dam.cocinafacil.com.mx/wp-content/uploads/2019/04/hot-dog-aderezo-tocino.png" alt="">
+                <p class="descripcion">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vero voluptatem culpa.</p>
+                <p class="precio">$45</p>
+            </div>
+            <div class="card">
+                <h3 class="titulo"> Pizza</h3>
+                <img class="imagen" src="https://www.saborusa.com/wp-content/uploads/2019/10/Animate-a-disfrutar-una-deliciosa-pizza-de-salchicha-Foto-destacada.png" alt="">
+                <p class="descripcion">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vero voluptatem culpa.</p>
+                <p class="precio">$130</p>
+            </div>
+            <div class="card">
+                <h3 class="titulo">Alitas</h3>
+                <img class="imagen" src="https://i.blogs.es/7bb4b4/alitas-ar/840_560.jpg" alt="">
+                <p class="descripcion">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vero voluptatem culpa.</p>
+                <p class="precio">$55</p>
+            </div>
+            <div class="card">
+                <h3 class="titulo">Rollos de canela</h3>
+                <img class="imagen" src="https://t1.rg.ltmcdn.com/es/posts/6/5/6/rollos_de_canela_faciles_23656_orig.jpg" alt="">
+                <p class="descripcion">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vero voluptatem culpa.</p>
+                <p class="precio">$40</p>
+            </div>
+
+        </div>
+    </div>
+    <footer class="footer">
+        <h5>@Cocina Paraíso</h5>
+    </footer>
+</body>
+</html>
+
+    <style scoped>
+        *{
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            font-family:Verdana, Geneva, Tahoma, sans-serif ;
+            font-size: 1rem;
+            min-height: 100%;
+        }
+        html{
+            height: 100%;  
+        }
+        header .container, h1, h2{
+            color: white;
+            text-shadow: 2px 1px gray;;
+        }
+        .grid-container>* {
+            box-shadow: -1px 1px 7px 0px rgba(0, 0, 0, 0.75);
+            border-radius: 4px;
+            padding: 10px;  
+            text-align: center;
+        }
+
+        .navbar{
+            grid-area: header;
+            background-color: lightblue;
+        }
+        .cards{
+            grid-area: cards;
+            background-color: white;
+        }
+        .card{
+            text-align: center;
+            background-color: lightcyan;
+            height: 320px;
+            width: 300px;
+            margin: 10px;
+            text-align: center;
+            margin-left: 65px;
+            box-shadow: 10px 10px 10px 10px  rgba(49, 49, 49, 0.342);
+        }
+        .imagen{
+            height: 120px;
+            width: 200px;
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+        .container-cards{
+            display: grid;
+            grid-template-columns: auto auto auto ;
+        }
+        .footer{
+            grid-area: footer;
+            background-color: lightcyan;
+        }
+        .grid-container {
+            display: grid;
+            grid-gap: 10px;
+            grid-template:
+                "header" 100px 
+                "cards" auto
+                "footer" 80px; 
+        }
+    </style>
